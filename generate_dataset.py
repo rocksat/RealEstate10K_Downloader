@@ -132,7 +132,7 @@ class DataDownloader:
 
             videoname_candinate_list = glob.glob('./*')
             for videoname_candinate in videoname_candinate_list:
-                if videoname_candinate.split('.')[-2] == '/current_' + mode:
+                if videoname_candinate.split('.')[-1] == '/current_' + mode:
                     videoname = videoname_candinate
 
             if len(data) == 1:  # len(data) is len(data.list_seqnames)
